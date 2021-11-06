@@ -5,20 +5,18 @@ body {
     max-height: 1000px;
     margin: 0;
     padding: 0;
-    font-size: 16pt; /* test for this! Make all sizes em or rem */
+    font-size: 16pt; 
 }
 
 
 header {
     display: flex;
-    /* align-items: stretch; */
-    /* align-items: center; */
     align-items: center;
     flex-direction: column;
     z-index: 100;
     position: sticky;
     top:0;
-    background:#8C1DE4;
+    background:#654ee6;
     border-bottom: 3px solid #654ee6;
 }
 
@@ -26,10 +24,17 @@ h1{
     font-size: 1.5em;
     text-align: center;
     line-height: 2;
-    color: #ffffff
+    color: #654ee6
   }
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2;
+    color: #ffffff
+}
   
-  h2{
+h2{
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
@@ -37,10 +42,17 @@ h1{
   
   p {
     padding: 0 30px;
-    color: #ffffff;
+    color: #654ee6;
     text-align: center;
 
   }
+
+h4 {
+    padding: 0 30px;
+    color: #ffffff;
+    text-align: center;
+
+}
   
   a.skip{
     background: white;
@@ -70,7 +82,6 @@ h1{
   
   .nav_item a:hover, a:focus{
     color: #E4D01D;
-    /* text-decoration: underline; */
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
   }
@@ -125,137 +136,47 @@ h1{
   }
   
   footer{
-    background-color: black;
+    background-color: #654ee6;
     color: white;
     padding: 20px;
     text-align: center;
   }
 
-  @media screen and (min-width: 850px){
-    .card_big{
-        -webkit-transform: scaleY(1.1);
-        transform: scaleY(1.1);
-        z-index: -99;
-  }
-}
-  
 
 .nav_links:visited {
     color: inherit;
   }
 
-.nav_links{
+.nav_links:link{
     display: flex;
     flex-direction: column;
+    color:rgb(238, 165, 70);
 }
 
-.card header{
-    z-index: 10;
-    background: #288088;
-    border: 2px solid #45ADAD;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
+.section1{
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
 }
 
-.pricing{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.container3{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px auto;
+  justify-content: center;
 }
 
-.card, .card_big{
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: stretch; */
-    flex-basis: 450px;
+img{
+  border-radius: 10%;
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+.grid-container{
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  grid-column: 1 / 4;
+  background-color: #2196F3;
+  padding: 10px;
 
-.gallery img{
-    border: 10px solid #50C7C7;
-    margin: 10px 10px 10px 10px;
-    width: 300px;
-}
-
-@keyframes logo_animate{
-    0% {width: 50px; opacity: 0;}
-    100% {width: 425px; opacity: 1;}
-}
-
-#logo {
-    animation: logo_animate 5s none;
-}
-
-@media screen and (min-width: 850px){
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-    }
-    .nav_links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .card{
-        flex-basis: 250px;
-    }
-
-}
-@media (prefers-reduced-motion) {
-    #logo{
-        animation: none;
-    }
-}
-
-@media print {
-    body{
-        background-image: none;
-    }
-    
-    nav{
-        width: 100%;
-    }
-
-    .nav_links{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .pricing{
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: nowrap;
-        flex-flow: row;
-    }
-
-    .card{
-        border: 2px solid #45ADDD;
-        flex-basis: 250px;
-    }
-
-    #gallery{
-        visibility: hidden;
-    }
-
-    .pricing li:nth-child(even):after{
-        content: "\1F44D";
-    }
-
-    .pricing li:nth-child(odd):before{
-        content: "\1F44D";
-    }
 }
