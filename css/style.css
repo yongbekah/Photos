@@ -78,63 +78,27 @@ h4 {
 
   .nav_item a{
     padding: 10px;
+    color: #eadca6;
   }
   
   .nav_item a:hover, a:focus{
-    color: #E4D01D;
+    color: red;
     -webkit-text-decoration-style: dotted;
             text-decoration-style: dotted;
   }
+
+
+  .nav_item_current{ 
+    color: red;
+    background-color: skyblue ;
+    border: 0.1px solid #eadca6;
+}
 
   .pricing{
     min-height: 475px;
   }
 
-  .card {
-    margin: 12px;
-    background: #fff;
-    border-radius: 7px;
-    padding: 0 0 25px 0;
-  
-  }
 
-  .card > ul{
-    list-style: none;
-    padding-left: 5px;
-  }
-  
-  .card > ul li {
-    width: 90%;
-    margin: 20px auto;
-    
-  }
-
-.card button{
-    width: 90%;
-    height: 40px;
-    border: 0;
-    margin-left: 5%;
-    border-radius: 7px;
-    background: #288080;
-    color: white;
-    font-size: 1em;
-  }
-  
-  .card h3{
-    font-size: 4em;
-    color: white;
-    text-align: center;
-  }
-  
-  .card_big{
-    -webkit-transform: initial;
-            transform: initial;
-  }
-
-  .gallery{
-    min-height: 600px;
-  }
-  
   footer{
     background-color: #654ee6;
     color: white;
@@ -145,12 +109,18 @@ h4 {
 
 .nav_links:visited {
     color: inherit;
-  }
+  } 
 
 .nav_links:link{
     display: flex;
     flex-direction: column;
     color:rgb(238, 165, 70);
+}
+
+.nav_item{
+  display: flex;
+  flex-direction: column;
+  color:rgb(238, 165, 70);
 }
 
 .section1{
